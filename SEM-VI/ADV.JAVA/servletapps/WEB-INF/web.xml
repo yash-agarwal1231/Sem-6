@@ -1,0 +1,35 @@
+<web-app xmlns="http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html" 
+         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html 
+         http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html/web-app_3_0.xsd" 
+         version="3.0">
+
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>HelloWorldServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GreetServlet</servlet-name>
+        <servlet-class>GreetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GreetServlet</servlet-name>
+        <url-pattern>/greet</url-pattern>
+    </servlet-mapping>
+ 
+</web-app>
